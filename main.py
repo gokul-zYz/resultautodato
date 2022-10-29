@@ -13,7 +13,7 @@ driver = webdriver.Chrome(os.environ.get("CHROMEDRIVER_PATH"), options=chrome_op
 def cord(result,colr):
   webhookurl="https://discord.com/api/webhooks/1035595915894984855/qhPVZeypFgsNwvNvAn3mwExKrvyRCv6r2ODMl2HM4ZD7JpBG7Lsccr7mc9DaCP7hbkCY"
   webhook=DiscordWebhook(url=webhookurl)
-  embed=DiscordEmbed(title="RESULT-:"+f,description=result,color=colr)
+  embed=DiscordEmbed(title="RESULT-:",description=result,color=colr)
   webhook.add_embed(embed)
   webhook.execute()
 
