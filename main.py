@@ -36,6 +36,6 @@ def result():
    result()
   
     
-result(var)
+result()
 driver.close()
 
